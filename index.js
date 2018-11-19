@@ -370,8 +370,7 @@
                 'ref': 'vsl',
                 'style': {
                     'display': 'block',
-                    'overflow-y': 'auto',
-                    'height': this.size * this.remain + 'px'
+                    'overflow-y': 'auto'
                 },
                 'on': {
                     '&scroll': dbc ? _debounce(this.onScroll.bind(this), dbc) : this.onScroll
