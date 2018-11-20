@@ -202,6 +202,7 @@
                     return this.variable(index) || 0
                 } else {
                     var slot = this.$slots.draggable
+                    console.log('line 204')
                     console.log(slot)
                     var style = slot && slot.data && slot.data.style
                     if (style && style.height) {
@@ -293,8 +294,7 @@
             filter: function () {
                 var delta = this.delta
                 var slots = this.$slots.draggable
-                console.log(this.$slots.draggable)
-                console.log('------slots-----')
+                console.log('------slots----- 297')
                 console.log(slots)
 
                 if (!slots) {
