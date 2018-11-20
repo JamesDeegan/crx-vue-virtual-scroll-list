@@ -201,7 +201,8 @@
                 if (typeof this.variable === 'function') {
                     return this.variable(index) || 0
                 } else {
-                    var slot = this.$slots.draggable[index]
+                    var slot = this.$slots.draggable[0].elm.children[index]
+                    console.log(slot)
                     var style = slot && slot.data && slot.data.style
                     if (style && style.height) {
                         var shm = style.height.match(/^(.*)px$/)
