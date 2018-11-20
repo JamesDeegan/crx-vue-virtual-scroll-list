@@ -292,6 +292,8 @@
             filter: function () {
                 var delta = this.delta
                 var slots = this.$slots.default
+                console.log('------slots-----')
+                console.log(slots)
 
                 if (!slots) {
                     slots = []
