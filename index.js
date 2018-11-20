@@ -201,7 +201,7 @@
                 if (typeof this.variable === 'function') {
                     return this.variable(index) || 0
                 } else {
-                    var slot = this.$slots.draggable
+                    var slot = this.$slots.default
                     console.log('line 204')
                     console.log(slot)
                     var style = slot && slot.data && slot.data.style
@@ -293,7 +293,7 @@
             // filter the shown items base on `start` and `end`.
             filter: function () {
                 var delta = this.delta
-                var slots = this.$slots.draggable[0]
+                var slots = this.$slots.default
                 console.log('------slots----- 297')
                 console.log(slots)
 
