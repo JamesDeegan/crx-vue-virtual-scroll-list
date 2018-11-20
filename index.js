@@ -201,7 +201,7 @@
                 if (typeof this.variable === 'function') {
                     return this.variable(index) || 0
                 } else {
-                    var slot = this.$slots.default[index]
+                    var slot = this.$slots.draggable[index]
                     var style = slot && slot.data && slot.data.style
                     if (style && style.height) {
                         var shm = style.height.match(/^(.*)px$/)
@@ -291,7 +291,7 @@
             // filter the shown items base on `start` and `end`.
             filter: function () {
                 var delta = this.delta
-                var slots = this.$slots.default
+                var slots = this.$slots.draggable
                 console.log('------slots-----')
                 console.log(slots)
 
