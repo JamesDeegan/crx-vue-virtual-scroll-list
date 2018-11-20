@@ -375,7 +375,7 @@
                     'overflow-y': 'auto'
                 },
                 'on': {
-                    // '&scroll': dbc ? _debounce(this.onScroll.bind(this), dbc) : this.onScroll
+                    '&scroll': dbc ? _debounce(this.onScroll.bind(this), dbc) : this.onScroll
                 }
             }, [
                 h(this.wtag, {
