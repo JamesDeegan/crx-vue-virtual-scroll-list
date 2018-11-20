@@ -293,7 +293,7 @@
             // filter the shown items base on `start` and `end`.
             filter: function () {
                 var delta = this.delta
-                var slots = this.$slots.default
+                var slots = this.$slots.default[0].componentOptions.children
                 console.log('-- DEFAULT SLOT --')
                 console.log(this.$slots.default)
                 console.log('------slots----- 297')
