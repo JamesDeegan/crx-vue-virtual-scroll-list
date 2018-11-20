@@ -293,9 +293,8 @@
             // filter the shown items base on `start` and `end`.
             filter: function () {
                 var delta = this.delta
-                var slots = this.$slots.default
+                var slots = this.$slots.default.elm
                 console.log('------slots----- 297')
-                console.log(JSON.stringify(slots))
                 console.log(slots)
 
                 if (!slots) {
