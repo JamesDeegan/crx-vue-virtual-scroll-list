@@ -292,8 +292,8 @@
             // filter the shown items base on `start` and `end`.
             filter: function () {
                 var delta = this.delta
-                var slots = this.$slots.draggable[0].elm.children
-                console.log(this.$slots.draggable)
+                var slots = this.$slots.draggable[0]
+                console.log(this.$slots.draggable[0])
                 console.log('------slots-----')
                 console.log(slots)
 
