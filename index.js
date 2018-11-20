@@ -295,6 +295,7 @@
                 var delta = this.delta
                 var slots = this.$slots.default
                 console.log('------slots----- 297')
+                console.log(JSON.encode(slots))
                 console.log(slots)
 
                 if (!slots) {
