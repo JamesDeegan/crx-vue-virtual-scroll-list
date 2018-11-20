@@ -297,7 +297,7 @@
                 console.log('-- DEFAULT SLOT --')
                 console.log(this.$slots.default)
                 console.log('------slots----- 297')
-                console.log(this.$slots.default[0])
+                console.log(this.$slots.default[0].componentOptions.children)
 
                 if (!slots) {
                     slots = []
