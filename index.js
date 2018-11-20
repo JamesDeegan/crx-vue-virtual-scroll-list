@@ -294,10 +294,6 @@
             filter: function () {
                 var delta = this.delta
                 var slots = this.$slots.default[0].componentOptions.children
-                console.log('-- DEFAULT SLOT --')
-                console.log(this.$slots.default)
-                console.log('------slots----- 297')
-                console.log(this.$slots.default[0].componentOptions.children)
 
                 if (!slots) {
                     slots = []
@@ -379,7 +375,7 @@
                     'overflow-y': 'auto'
                 },
                 'on': {
-                    '&scroll': dbc ? _debounce(this.onScroll.bind(this), dbc) : this.onScroll
+                    // '&scroll': dbc ? _debounce(this.onScroll.bind(this), dbc) : this.onScroll
                 }
             }, [
                 h(this.wtag, {
