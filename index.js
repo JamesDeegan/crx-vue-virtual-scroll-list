@@ -293,7 +293,7 @@
             filter: function () {
                 var delta = this.delta
                 var slots = this.$slots.draggable[0]
-                console.log(this.$slots.draggable[0])
+                console.log(this.$slots.draggable)
                 console.log('------slots-----')
                 console.log(slots)
 
