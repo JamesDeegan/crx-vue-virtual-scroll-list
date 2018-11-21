@@ -370,7 +370,8 @@
                 'ref': 'vsl',
                 'style': {
                     'display': 'block',
-                    'overflow-y': 'auto'
+                    'overflow-y': 'auto',
+                    'max-height': this.size * this.remain + 'px'
                     // 'height': this.size * this.remain + 'px'
                 },
                 'on': {
