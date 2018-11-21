@@ -201,9 +201,7 @@
                 if (typeof this.variable === 'function') {
                     return this.variable(index) || 0
                 } else {
-                    var slot = this.$slots.default
-                    console.log('line 204')
-                    console.log(slot)
+                    var slot = this.$slots.default[index]
                     var style = slot && slot.data && slot.data.style
                     if (style && style.height) {
                         var shm = style.height.match(/^(.*)px$/)
@@ -293,7 +291,7 @@
             // filter the shown items base on `start` and `end`.
             filter: function () {
                 var delta = this.delta
-                var slots = this.$slots.default[0].componentOptions.children
+                var slots = this.$slots.default
 
                 if (!slots) {
                     slots = []
@@ -373,6 +371,7 @@
                 'style': {
                     'display': 'block',
                     'overflow-y': 'auto'
+                    // 'height': this.size * this.remain + 'px'
                 },
                 'on': {
                     '&scroll': dbc ? _debounce(this.onScroll.bind(this), dbc) : this.onScroll
